@@ -1,0 +1,26 @@
+/* src/components/ThemeToggle/ThemeToggle.css */
+.theme-toggle {
+  background: #1b2838;
+  border: 1px solid #2a475e;
+  border-radius: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  color: #c7d5e0;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.theme-toggle:hover {
+  background: #2a475e;
+  color: #66c0f4;
+  transform: scale(1.05);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+  background: #171a21;
+  color: #1a9fff;
+}
