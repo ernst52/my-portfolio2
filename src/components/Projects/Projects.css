@@ -1,0 +1,129 @@
+/* General Section Styling */
+.projects.section {
+  padding: 4rem 2rem;
+  background: var(--bg-secondary);
+}
+
+.section-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-subtitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Project Placeholder */
+.project-placeholder {
+  border: 2px dashed var(--border-color);
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-tertiary);
+  border-radius: 0.5rem;
+}
+
+/* Project Card Styling */
+.project-card {
+  background: var(--bg-primary);
+  border-radius: 0.625rem;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+/* Image */
+.project-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* Content */
+.project-content {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Technologies */
+.project-tech-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: auto;
+}
+
+.project-tech {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+}
+
+/* Link Button */
+.project-link {
+  margin-top: 1.25rem;
+  padding: 0.6rem 1rem;
+  display: inline-block;
+  text-align: center;
+  background: var(--accent-primary);
+  color: var(--text-primary-inverse, #fff);
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  background: var(--accent-secondary);
+}
+
+/* Dark Mode Optional Glow for Images */
+body.dark-mode .project-image img {
+  box-shadow: 0 0 20px var(--accent-primary);
+  transition: box-shadow 0.3s ease;
+}
